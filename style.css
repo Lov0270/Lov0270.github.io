@@ -1,5 +1,5 @@
 .background{
-
+    position: fixed;
     margin-top: 110px;
     width:65%;
     height: 650px;
@@ -30,6 +30,12 @@ body{
     border-color: #536e74;
 }
 
+input{
+    
+    background-image: url("/images/1.jpg");
+    
+    
+}
 
 #left{
     margin-right: 10px;
