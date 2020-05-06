@@ -21,6 +21,8 @@ body{
 #photo{
     width:1230px;
     height: 650px;
+    display: block;
+    position: relative;
     border-left: ridge;
     border-right: ridge;
     border-width: thin;
