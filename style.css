@@ -1,90 +1,110 @@
-body {
-  font-family: 'Open Sans', sans-serif;
+.background{
+    margin-top: 110px;
+    width:65%;
+    height: 650px;
+    background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-style: ridge;
+    border-radius:10px;
+    border-color: #536e74;
+    position: relative;
+    
 }
 
-main {
-  width: 600px;
-  margin: 0 auto;
+body{
+    background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
+    position: relative;
 }
 
-.newsletter-form {
-  color: #666666;
-  border: 1px solid #cccccc;
-  padding: 10px;
-  border-radius: 3px;
-  position: relative;
+#photo{
+    width:1230px;
+    height: 650px;
+    border-left: ridge;
+    border-right: ridge;
+    border-width: thin;
+    border-color: #536e74;
 }
 
-input[type="text"] {
-  width: 100%;
-  box-sizing: border-box;
-  height: 30px;
-  margin: 0 0 5px;
+input{
+    
+    background-image: url("/images/1.jpg");
+    
+    
 }
 
-input[type="submit"] {
-  width: 100%;
-  box-sizing: border-box;
-  background: #3cb878;
-  border: 0;
-  color: white;
-  height: 30px;
-  margin: 0 0 10px;
-  cursor: pointer;
+#left{
+    margin-right: 10px;
+    height:30px;
+    width: 50px;
+ 
 }
 
-.newsletter-form h2 {
-  margin-top: 0;
+#right{
+    height:30px;
+    width: 50px;
+    margin-left: 10px;
+    
 }
 
-a {
-  color: #3CB878;
+.lside:hover{
+    cursor: pointer;
+    opacity: .8;}
+
+.rside:hover{
+   
+    cursor: pointer;
+    opacity: .8;}
+
+h1{
+    position: absolute;
+    color:white;
+    margin-top: 220px;
+    margin-right: -100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    opacity: 0.6;
+   
 }
 
-.exit-button {
-  position: absolute;
-  top: 3px;
-  right: 10px;
-  cursor: pointer;
+p{
+    position: absolute;
+    color:white; 
+    margin-top: 260px;
+    margin-right: -100px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    opacity: 0.6;
+   
 }
 
-.question-button {
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  color: white;
-  font-size: 70px;
-  text-align: center;
-  border-radius: 50%;
-  background: #3cb878;
-  z-index: 10;
-  cursor: pointer;
-  text-decoration: none;
-  box-shadow: 2px 2px 10px #666666;
+footer{
+    justify-content: center;
+    display:flex;
 }
 
-.key-features {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  align-items: flex-start;
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    box-shadow:20px 20px 50px 15px grey;  
+    border:ridge;
+    
+    border-top-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    
+  }
+
+  .box:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+    opacity: .5;
+
 }
 
-.feature {
-  background: #3cb878;
-  padding: 30px;
-  margin: 10px 0;
-  width: 120px;
-  box-shadow: 2px 2px 10px #666666;
-}
+    .box:active {
+        border-radius:100px;
+    }
 
-.feature p {
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-  margin-bottom: 0;
-  text-align: center;
-}
+    
