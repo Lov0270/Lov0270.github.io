@@ -1,6 +1,6 @@
 .background{
     margin-top: 110px;
-    width:65%;
+    width:50%;
     height: 650px;
     background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
     display: flex;
