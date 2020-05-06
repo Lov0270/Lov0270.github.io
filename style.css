@@ -22,7 +22,7 @@ body{
 }
 
 #photo{
-    width:1230px;
+    width:2000px;
     height: 650px;
     display: block;
     position: relative;
@@ -30,13 +30,6 @@ body{
     border-right: ridge;
     border-width: thin;
     border-color: #536e74;
-}
-
-input{
-    
-    background-image: url("/images/1.jpg");
-    
-    
 }
 
 #left{
