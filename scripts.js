@@ -30,7 +30,7 @@ kép van kijelölve
 
 
 let data = {                     // foto objektumok
-photo:'images/1.jpg',
+photo:'images/2.jpg',
 title: '',
 description:"",
 id:1
