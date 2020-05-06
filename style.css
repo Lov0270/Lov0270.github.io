@@ -1,6 +1,7 @@
 .background{
+
     margin-top: 110px;
-    width:50%;
+    width:65%;
     height: 650px;
     background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
     display: flex;
@@ -10,9 +11,6 @@
     border-radius:10px;
     border-color: #536e74;
     position: relative;
-	    position: fixed;
-		top: 50%;
-    left: 50%
     
 }
 
@@ -31,6 +29,7 @@ body{
     border-width: thin;
     border-color: #536e74;
 }
+
 
 #left{
     margin-right: 10px;
