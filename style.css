@@ -1,6 +1,6 @@
 .background{
     margin-top: 110px;
-    width:1370px;
+    width:65%;
     height: 650px;
     background-image: radial-gradient(circle at center center, rgb(71, 71, 71),rgb(8, 8, 8));
     display: flex;
@@ -62,9 +62,8 @@ h1{
     color:white;
     margin-top: 220px;
     margin-right: -100px;
-    font-family: 'Quicksand', sans-serif;
+     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    opacity: 0.6;
    
 }
 
@@ -75,7 +74,6 @@ p{
     margin-right: -100px;
     font-family: 'Quicksand', sans-serif;
     font-weight: 400;
-    opacity: 0.6;
    
 }
 
