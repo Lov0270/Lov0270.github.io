@@ -96,7 +96,7 @@ imagesData.forEach((item, index) => { // ez teszi bele a képeket a boxokba, de 
                 }); */
 
                 //  illeszd az id moge: data-index=${index}>${item} (data-index="${index}")
-                $('#0').css("background-image", "url(images/2.jpg)");
+                $('#0').css("background-image", "url(images/3.jpg)");
                 $('#1').css("background-image", "url(images/2.jpg)");
                 $('#2').css("background-image", "url(images/3.jpg)");
                 $('#3').css("background-image", "url(images/4.jpg)"); 
