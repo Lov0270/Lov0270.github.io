@@ -31,33 +31,34 @@ kép van kijelölve
 
 let data = {                     // foto objektumok
 photo:'images/1.jpg',
-title: 'The Batman',
-description:"There's a very big lightning behind him",
+title: '',
+description:"",
 id:1
 };
 
 let data2 = {
     photo:'images/2.jpg',
-    title: 'My Title2',
-    description:'diiiiiiiiiik',
+    title: 'First Apearance',
+    description:'Batman is a fictional superhero appearing in American comic books published by DC Comics.<br> The character was created by artist Bob Kane and writer Bill Finger, and first appeared in Detective Comics #27 in 1939.',
     };
 
 let data3 = {
     photo:'images/3.jpg',
-    title: 'My Title3',
-    description:'Mukoooooooooodik',
+    title: 'Modern Age',
+    description:"Frank Miller's limited series The Dark Knight Returns (February–June 1986) returned the character to his darker roots, both in atmosphere and tone.",
     };    
 
 let data4 = {
     photo:'images/4.jpg',
-    title: 'My Title4',
-    description:'Mukoooooooooodik!!!!!!',
+    title: 'The Animated Series',
+    description:"The series was praised for its thematic complexity, film noir aesthetics, darker tone, artistic presentation, and modernization of its title character's crime-fighting origins.",
     };  
 
     let data5 = {
         photo:'images/5.jpg',
-        title: 'My Title5',
-        description:'Mukoooooooooodik!!!!!!',
+        title: 'Enemies',
+        description:"Antagonists that appeared in the series included classic villain such <br> as Poison Ivy, Catwoman, the Riddler, Two-Face, the Mad Hatter, Ra's al Ghul, Talia al Ghul, <br> Man-Bat, the Penguin, the Scarecrow, Killer Croc, Bane, the Ventriloquist and his dummy Scarface.",
+        id:5
         };  
 
     
@@ -83,7 +84,17 @@ let loadPhoto = (photoNumber) => {
   
 //thumbnails
 imagesData.forEach((item, index) => { // ez teszi bele a képeket a boxokba, de majd at kell alakitani, hogy ez is hozza őket letre a lent levo komment sorral
-                $('footer').append(`<div class="box" id=${index} </div>`);
+                $('footer').append(`<div class="box" id=${index}  </div>`);
+
+             /*   $('.box').click((event) => {
+                  let indexClicked = $(event.target).attr('data-index');
+                   indexClicked is now a string! if you need it as a number you have to change it
+                   because for example "1" + 1 is going to be "11" and not 2
+                  let numberIndex = parseInt(indexClicked);
+                   now numberIndex is a number
+                  $('#clicked').text(imagesData[indexClicked]);
+                }); */
+
                 //  illeszd az id moge: data-index=${index}>${item} (data-index="${index}")
                 $('#0').css("background-image", "url(images/1.jpg)");
                 $('#1').css("background-image", "url(images/2.jpg)");
@@ -97,46 +108,37 @@ let borderCss = '#946e08 ridge'; //clicked tumbnail border
 let borderdefault = 'ridge'; //defeault thumbnail border
 
             $('#0').click((event) => {
-              currentPhoto===0;
                  $('#photo').attr('src', "images/1.jpg");
                  $('#photo-title').html(data.title);
-                $('#photo-description').html(data.description);
-                 //let indexClicked = $(event.target).attr('data-index');
-                 // indexClicked is now a string! if you need it as a number you have to change it
-                 // because for example "1" + 1 is going to be "11" and not 2
-                 //let numberIndex = parseInt(indexClicked);
-                 // now numberIndex is a number
-                // $('#clicked').text(data[indexClicked]);
-                $('#0').css('border', borderCss);
-                $('#1, #2, #3, #4, #5').css('border', borderdefault);
+                 $('#photo-description').html(data.description);
+                 $('#0').css('border', borderCss);
+                 $('#1, #2, #3, #4').css('border', borderdefault);
                });
 
                $('#1').click((event) => { //1. thumbnail-re clicknel betolti a kepet a h1et meg a p-t
-                currentPhoto===1;
                 $('#photo').attr('src', "images/2.jpg");
                 $('#photo-title').html(data2.title);
                 $('#photo-description').html(data2.description);
                 $('#1').css('border', borderCss); //ha clickelve van a thumbnaire akkor kicsereli a bordert
-                $('#0, #2, #3, #4, #5').css('border', borderdefault); //a tobbinek meg beallitja a defaultot
+                $('#0, #2, #3, #4').css('border', borderdefault); //a tobbinek meg beallitja a defaultot
                 
               });
 
               $('#2').click((event) => {
                 $('#photo').attr('src', "images/3.jpg");
-                $('#photo-title').html(data2.title);
-                $('#photo-description').html(data2.description);
+                $('#photo-title').html(data3.title);
+                $('#photo-description').html(data3.description);
                 $('#2').css('border', borderCss);
-                $('#0, #1, #3, #4, #5').css('border', borderdefault);
+                $('#0, #1, #3, #4').css('border', borderdefault);
                 
               });
 
               $('#3').click((event) => {
-                currentPhoto===3;
                 $('#photo').attr('src', "images/4.jpg");
                 $('#photo-title').html(data4.title);
                 $('#photo-description').html(data4.description);
                 $('#3').css('border', borderCss);
-                $('#0, #1, #2, #4, #5, #6').css('border', borderdefault);
+                $('#0, #1, #2, #4').css('border', borderdefault);
               });
 
               $('#4').click((event) => {
@@ -144,13 +146,14 @@ let borderdefault = 'ridge'; //defeault thumbnail border
                 $('#photo-title').html(data5.title);
                $('#photo-description').html(data5.description);
                $('#4').css('border', borderCss);
-               $('#1, #2, #3, #5').css('border', borderdefault);
+               $('#0, #1, #2, #3').css('border', borderdefault);
               });
 
             
 
-  $('#right').click(() => {
-    if(currentPhoto>=imagesData.length-1){ // hogyha a current photo erteke nagyonn mint a tomb akkor ne menjen tovabb
+  $('#next').click(() => {
+    if(currentPhoto>=imagesData.length-1 ){  
+      //  hogyha a current photo erteke nagyonn mint a tomb akkor ne menjen tovabb
         console.log("This is the LAST item");
     }else{
         currentPhoto++;
@@ -160,19 +163,26 @@ let borderdefault = 'ridge'; //defeault thumbnail border
     } /*itt valamigaz van, mert bizonyos click utan nem enged tovabb clickelni*/
  });
 
-  $('#left').click(() => {
-       if(currentPhoto === 0){
+ $('#previous').click(() => {
+  if(currentPhoto===0){
+   console.log("This is the first item");
+   }else{
+       currentPhoto--;
+   loadPhoto(currentPhoto);
+  }
+});
+
+    
+  /** 
+   *  
+$('#left').click(() => {
+       if(currentPhoto===0){
         console.log("This is the first item");
         }else{
             currentPhoto--;
         loadPhoto(currentPhoto);
        }
   });
-
-    
-  /** 
-   *  
-
    * 
    * 
    * 
