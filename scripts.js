@@ -57,7 +57,7 @@ let data4 = {
     let data5 = {
         photo:'images/5.jpg',
         title: 'Enemies',
-        description:"Antagonists that appeared in the series included classic villain such <br> as Poison Ivy, Catwoman, the Riddler, Two-Face, the Mad Hatter, Ra's al Ghul, Talia al Ghul, <br> Man-Bat, the Penguin, the Scarecrow, Killer Croc, Bane, the Ventriloquist and his dummy Scarface, Hugo Strange and Tony Zucco.",
+        description:"Antagonists that appeared in the series included classic villain such <br> as Poison Ivy, Catwoman, the Riddler, Two-Face, the Mad Hatter, Ra's al Ghul, Talia al Ghul, <br> Man-Bat, the Penguin, the Scarecrow, Killer Croc, Bane, the Ventriloquist and his dummy Scarface.",
         id:5
         };  
 
@@ -151,7 +151,7 @@ let borderdefault = 'ridge'; //defeault thumbnail border
 
             
 
-  $('#right').click(() => {
+  $('#next').click(() => {
     if(currentPhoto>=imagesData.length-1 ){  
       //  hogyha a current photo erteke nagyonn mint a tomb akkor ne menjen tovabb
         console.log("This is the LAST item");
@@ -163,7 +163,7 @@ let borderdefault = 'ridge'; //defeault thumbnail border
     } /*itt valamigaz van, mert bizonyos click utan nem enged tovabb clickelni*/
  });
 
- $('#left').click(() => {
+ $('#previous').click(() => {
   if(currentPhoto===0){
    console.log("This is the first item");
    }else{
