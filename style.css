@@ -128,11 +128,11 @@ p {
 
 footer{
     justify-content: center;
-    display:flex;
+    
     position: fixed;
-    top:3%;
-    left: 32%;
-    /*margin-top: 800px; */
+    
+    left:90%;
+    
  
     
 }
