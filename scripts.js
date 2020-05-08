@@ -8,7 +8,6 @@
 
 //https://books.google.hu/books?id=MwwxCgAAQBAJ&pg=PT579&lpg=PT579&dq=$(%27%23photo-title%27).attr(%27src%27,+data.title);&source=bl&ots=YxcSbrS77i&sig=ACfU3U1BOHdP5J_BU8V6zrmv15sctFvnCQ&hl=hu&sa=X&ved=2ahUKEwio8oi6xprpAhWjxoUKHWxrBj8Q6AEwAHoECAYQAQ#v=onepage&q=%24('%23photo-title').attr('src'%2C%20data.title)%3B&f=false
 
-
 // Ennek menj neki eloszor de csinalj elotte egy biztonsagi mentest!
 //https://www.youtube.com/watch?v=Dc2WHsuiXos
 
@@ -54,12 +53,12 @@ let data4 = {
     description:"The series was praised for its thematic complexity, film noir aesthetics, darker tone, artistic presentation, and modernization of its title character's crime-fighting origins.",
     };  
 
-    let data5 = {
-        photo:'images/5.jpg',
-        title: 'Enemies',
-        description:"Antagonists that appeared in the series included classic villain such <br> as Poison Ivy, Catwoman, the Riddler, Two-Face, the Mad Hatter, Ra's al Ghul, Talia al Ghul, <br> Man-Bat, the Penguin, the Scarecrow, Killer Croc, Bane, the Ventriloquist and his dummy Scarface.",
-        id:5
-        };  
+let data5 = {
+    photo:'images/5.jpg',
+    title: 'Enemies',
+    description:"Antagonists that appeared in the series included classic villain such <br> as Poison Ivy, Catwoman, the Riddler, Two-Face, the Mad Hatter, Ra's al Ghul, Talia al Ghul, <br> Man-Bat, the Penguin, the Scarecrow, Killer Croc, Bane, the Ventriloquist and his dummy Scarface.",
+    id:5
+    };  
 
     
  /* ez lehet meg kell!
@@ -130,7 +129,7 @@ imagesData.forEach((item, index) => { // ez teszi bele a képeket a boxokba
                 $('#2').css("background-image", "url(images/3.jpg)");
                 $('#3').css("background-image", "url(images/4.jpg)"); 
                 $('#4').css("background-image", "url(images/5.jpg)");   */
-                });
+     });
       
 //NYILAK-----------------------------------------------------------------------------------------------------------------------
                 // ez azert van itt, mert kulonben thumbok nelkul nem hasznalhatok a foreachenbeluli nyilak

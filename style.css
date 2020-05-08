@@ -118,8 +118,6 @@ p{
     display: block;
 }
 
-
-
 #previous{ /*jobbrabalra gombok divje*/
     border: ridge;
     
@@ -156,7 +154,7 @@ footer{
     
   } */
 
-  .thumbnails-pictures{
+.thumbnails-pictures{
     width: 80px;
     height: 80px;
     margin: 20px;
@@ -167,16 +165,16 @@ footer{
 }
 
 
-  .thumbnails-pictures:hover{
+.thumbnails-pictures:hover{
     transform: scale(1.1); 
     cursor: pointer;
     opacity: .5;
 
 }
 
-    .thumbnails-pictures:active {
+.thumbnails-pictures:active {
         border-radius:100px;
-    }
+}
 
    
 
